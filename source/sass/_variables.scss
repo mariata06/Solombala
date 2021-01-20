@@ -1,18 +1,18 @@
 //COLOR VARIABLES
-$dark-blue: #011c40; //основной цвет шрифта темно-синий
 $white: #ffffff; //основной цвет шрифта белый
-$grey: #e5e5e5; //цвет body
-$blue: #1e90ff; //заменяющий цвет фонов
-$light-blue: #87cefa; //заменяющий цвет контентных картинок
-$light: #f9fbfd; //светлый цвет текста
-$sky: #5496bd; //состояние active для ссылок
-$light-grey: #f2f2f2; //цвет input с hover
 $orange: #f9b233;
+$red: #e74011;
+$black: #000000; //цвет шрифта основной
+$grey: #e5e5e5;
+$dark: #444444; //основной цвет фона
+$light-grey: #b8b8b8; //цвет текста в placeholder
 
-$max-tablet-width: 1023px; // максимум для версии пишем когда идем от desktop к mobile (768px - 1023px;)
+$min-desktop-width: 1440px;
+//$max-tablet-width: 1023px; // максимум для версии пишем когда идем от desktop к mobile (768px - 1023px;)
 $max-mobile-width: 767px; // максимум для версии пишем когда идем от desktop к mobile (320px - 767px;)
-$min-tablet-width: 768px;
+//$min-tablet-width: 768px;
 $min-mobile-width: 320px;
+
 
 //RETINA VARIABLES
 $retina-dpi: 144dpi;

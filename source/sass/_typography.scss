@@ -1,0 +1,24 @@
+// FONTS
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("helveticaneuecyr roman"), local("helveticaneuecyr-roman"), url("../fonts/helveticaneuecyr-roman.woff2") format("woff2"), url("../fonts/helveticaneuecyr-roman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "helvetica-regular";
+  src: local("helvetica regular"), local("helvetica-regular"), url("../fonts/helvetica-regular.woff2") format("woff2"), url("../fonts/helvetica-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PF Handbook Pro";
+  src: local("PF Handbook Pro Bold"), local("PF-Handbook-Pro-Bold"), url("../fonts/PFHandbookPro-Bold.woff2") format("woff2"), url("../fonts/PFHandbookPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

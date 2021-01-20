@@ -12,31 +12,245 @@
 <body>
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="page-header__nav navigation">
-        <div class="navigation__contacts">
+        <div class="page-header__contacts">
+          <nav class="page-header__navigation navigation navigation--contacts container">
+            <p>Архангельск, Советская, 25</p>
+            <p>ТРЦ 10:00 − 21:00</p>
+            <p>ЛЕНТА 09:00 − 23:00</p>
+            <ul>
+              <li>
+                <a class="navigation__social-link" href="instagram.com">
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="navigation__social-link" href="vk.com">
+                  <svg width="28" height="16">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="navigation__contacts-map" href="#">Карта центра</a>
+          </nav>
+        </div>
+        <div class="page-header__main-menu">
+          <nav class="page-header__navigation navigation navigation--main-menu container">
+              <div class="navigation__logo">
+                <picture>
+                  <source srcset="img/logo-desktop.svg" media="(min-desktop-width: 1440px)">
+                  <img src="img/logo-mobile.svg" width="130" height="61" alt="Логотип сайта Соломбала Молл">
+                </picture>
+              </div>
+              <ul class="navigation__menu-links">
+                <li><a class="navigation__menu-link navigation__menu-link--active" href="#">Магазины</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Акции<br>и события</a></li>
+                <li><a href="#">Развлечение<br>и обучение</a></li>
+                <li><a href="#">Бизнес<br>клубы</a></li>
+                <li><a href="#">партнёрам</a></li>
+              </ul>
+              <form action="https://echo.htmlacademy.ru" method="post" class="navigation__search search-form">
+                <label>
+                  <input tabindex="0" type="text" value="" placeholder="">
+                </label>
+                <svg width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </form>
+              <button class="navigation__menu-button button">
+                <svg width="30" height="18">
+                  <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
+              </button>
+          </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+      <section class="intro">
+        <div class="intro__content container">
+          <h1>Осень - это вторая весна! <span>в zolla</span></h1>
+          <p>Встречайте новую коллекцию Zolla.</p>
+          <p>Сказочная и уютная, яркая и одновременно нежная.</p>
+          <p>Это Ваша осень. Встречайте ее вместе с Zolla!</p>
+          <a href="#">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2>Новости</h2>
+        <div class="news__content container">
+          <figure>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-newyear-desktop@1x.webp 1x, img/news-newyear-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/news-newyear-mobile@1x.webp 1x, img/news-newyear-mobile@2x.webp 2x">
+              <source srcset="img/news-newyear-desktop@1x.png 1x, img/news-newyear-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/news-newyear-mobile@1x.png" srcset="img/news-newyear-mobile@2x.png 2x" alt="Открытие Новогодней елки">
+            </picture>
+            <figcaption>
+              <h3>Соломбала Молл зажёг свои огни и провел праздничную программу по открытию ёлки!</h3>
+              <p>Друзья! Это свершилось! 17 ноября для юных зрителей проведены театрализованное представление, игрову...</p>
+              <a href="#">Читать полностью</a>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-february-desktop@1x.webp 1x, img/news-february-desktop@2x.webp 2x">
+              <!--<source type="image/webp" srcset="img/news-february-mobile@1x.webp 1x, img/news-february-mobile@2x.webp 2x">-->
+              <source srcset="img/news-february-desktop@1x.png 1x, img/news-february-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/news-february-desktop@1x.png" srcset="img/news-february-desktop@2x.png 2x" alt="Открытие Новогодней елки">
+            </picture>
+            <figcaption>
+              <h3>Анонс мероприятий 14 и 15 февраля</h3>
+              <p>Отличный повод отметить торжество любви и романтики в ТРЦ «Соломбала Молл» в День всех в...</p>
+              <a href="#">Читать полностью</a>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-competition-desktop@1x.webp 1x, img/news-competition-desktop@2x.webp 2x">
+              <!--<source type="image/webp" srcset="img/news-competition-mobile@1x.webp 1x, img/news-competition-mobile@2x.webp 2x">-->
+              <source srcset="img/news-competition-desktop@1x.png 1x, img/news-competition-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/news-competition-desktop@1x.png" srcset="img/news-competition-desktop@2x.png 2x" alt="Открытие Новогодней елки">
+            </picture>
+            <figcaption>
+              <h3>Финал конкурса “Я-супер мама”</h3>
+              <p>Друзья, 23 ноября в 15:00 мы узнаем имя победительницы и обладательницы титула «Супер мама»! Не сомн...</p>
+              <a href="#">Читать полностью</a>
+            </figcaption>
+          </figure>
+        </div>
+        <a href="#">Все новости</a>
+      </section>
+
+      <section class="gallery container">
+        <h2 class="visually-hidden">Галерея</h2>
+        <div class="gallery__picture-wrapper">
+          <div class="gallery__hashtag">
+            <p class="gallery__hashtag-paragraph">#Соломбаламолл</p>
+            <p class="gallery__details-paragraph">Подпишись на наши социальные сети и учавствуй в жизни ТЦ для всей семьи</p>
+            <a class="gallery__pictures-link" href="https://www.instagram.com/solombala_mall/?hl=ru">Все фото</a>
+          </div>
+          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture gallery__picture--center">
+            <picture>
+              <source srcset="img/big-gallery-desktop@1x.png 1x, img/big-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/big-gallery-desktop@1x.png" srcset="img/big-gallery-desktop@2x.png 2x" alt="Торговый центр">
+            </picture>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="gallery__picture-wrapper">
+          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/activities-gallery-desktop@1x.webp 1x, img/activities-gallery-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/activities-gallery-mobile@1x.webp 1x, img/activities-gallery-mobile@2x.webp 2x">
+              <source srcset="img/activities-gallery-desktop@1x.png 1x, img/activities-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/activities-gallery-mobile@1x.png" srcset="img/activities-gallery-mobile@2x.png 2x" alt="Активности для детей">
+            </picture>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/care-gallery-desktop@1x.webp 1x, img/care-gallery-desktop@2x.webp 2x">
+              <img src="img/care-gallery-desktop@1x.png" srcset="img/care-gallery-desktop@2x.png 2x" alt="Забота о вас">
+            </picture>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="gallery__picture-wrapper">
+          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/girls-gallery-desktop@1x.webp 1x, img/girls-gallery-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/girls-gallery-mobile@1x.webp 1x, img/girls-gallery-mobile@2x.webp 2x">
+              <source srcset="img/girls-gallery-desktop@1x.png 1x, img/gitls-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/girls-gallery-mobile@1x.png" srcset="img/girls-gallery-mobile@2x.png 2x" alt="Детская мода">
+            </picture>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/shopping-gallery-desktop@1x.webp 1x, img/shopping-gallery-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/shopping-gallery-mobile@1x.webp 1x, img/shopping-gallery-mobile@2x.webp 2x">
+              <source srcset="img/shopping-gallery-desktop@1x.png 1x, img/shopping-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/shopping-gallery-mobile@1x.png" srcset="img/shopping-gallery-mobile@2x.png 2x" alt="Шоппинг для все семьи">
+            </picture>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="subscription container">
+        <div class="subscription__content">
+          <h2 class="visually-hidden">Подписаться на новости</h2>
+          <p>Узнавайте о новостях и&nbsp;<span>&nbsp;акциях</span> первыми</p>
+          <p>Уведомления о самых выгодных предложениях на почту или в VK. Раз в месяц, не больше.</p>
+          <button class="subscription__button button" type="button">Подписаться на новости</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__footer-menu footer-menu container">
+        <div class="footer-menu__contacts">
+          <div class="footer-menu__logo">
+            <picture>
+              <source srcset="img/logo-white-desktop.svg" media="(min-desktop-width: 1440px)">
+              <img src="img/logo-white-mobile.svg" width="129" height="60" alt="Логотип сайта Соломбала Молл">
+            </picture>
+          </div>
           <p>Архангельск, Советская, 25</p>
           <p>ТРЦ 10:00 − 21:00</p>
           <p>ЛЕНТА 09:00 − 23:00</p>
-          <ul>
-            <li>
-              <a href="instagram.com">
-                <svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="instagram.com">
-                <svg width="28" height="16">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <p><a href="#">Карта центра</a></p>
+          <p>ао "Соломбала молл"/2020</p>
         </div>
-      </nav>
-    </header>
+        <ul class="footer-menu__links">
+          <li><a href="#">О центре</a></li>
+          <li><a href="#">Карта центра</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__social-link" href="instagram.com">
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__social-link footer-menu__social-link--active" href="vk.com">
+              <svg width="28" height="16" class="footer-menu__icon">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-menu__feedback">
+          <p>Обратная связь</p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="footer-menu__feedback-form feedback-form">
+            <label for="name"><input id="name" type="text" name="userName" value="" placeholder="Введите ваше имя"></label>
+            <label for="email"><input id="email" type="email" name="userEmail" value="" placeholder="Введите ваш email"></label>
+            <textarea cols="35" rows="5" placeholder="Введите ваше обращение" name="userMessage"></textarea>
+            <button type="submit" class="button feedbacksend-button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 

@@ -1,0 +1,80 @@
+.subscription {
+  background-color: $white;
+  //background-image: none;
+  padding: 40px 100px 80px;
+}
+
+.subscription__content {
+  @media (min-width: $min-desktop-width) {
+    width: 970px;
+    height: 372px;
+    background-image: url("../img/phone-desktop@1x.png"), linear-gradient(#ffffff 30%, #f9b233 30% 70%);
+    //background-image: url("../img/phone-desktop@1x.png");
+    background-size: 38%, 100%;
+    background-position: bottom right, top center;
+    //background-repeat: no-repeat, no-repeat;
+    padding-top: 134px;
+    padding-left: 149px;
+    padding-right: 452px;
+    //padding-bottom: 301px;
+    background-repeat: no-repeat;
+    color: $white;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      //width: 970px;
+      //height: 372px;
+      background-image: url("../img/phone-desktop@2x.png"), linear-gradient(#ffffff 30%, #f9b233 30% 70%);
+      //background-image: url("../img/phone-desktop@2x.png");
+      //background-repeat: no-repeat, no-repeat;
+      //background-repeat: no-repeat;
+      //background-size: 38%, 100%;
+      //background-position: bottom right, top center;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    &:first-of-type {
+      @media (min-width: $min-desktop-width) {
+        font-family: "PF Handbook Pro", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+    }
+
+    &:last-of-type {
+      @media (min-width: $min-desktop-width) {
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  span {
+    color: $red;
+  }
+
+  button {
+    background-color: $red;
+    color: $white;
+    text-transform: uppercase;
+    font-family: "helvetica-regular", "Arial", sans-serif;
+    cursor: pointer;
+
+    @media (min-width: $min-desktop-width) {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 10px 15px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}

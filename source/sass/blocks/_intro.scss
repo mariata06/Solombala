@@ -1,0 +1,76 @@
+.intro {
+  padding: 70px 15px 70px;
+  min-height: 266px;
+
+  background-image: url("../img/slider-mobile@1x.png");
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/slider-mobile@2x.png");
+  }
+
+  @media (min-width: $min-desktop-width) {
+    background-image: url("../img/slider-desktop@1x.png");
+    background-size: cover;
+    padding-top: 149px;
+    padding-bottom: 341px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/slider-desktop@2x.png");
+    }
+  }
+
+  h1 {
+    font-family: "PF Handbook Pro", "Arial", sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    display: block;
+
+    @media (min-width: $min-desktop-width) {
+      font-size: 90px;
+      line-height: 90px;
+      width: 770px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      @media (min-width: $min-desktop-width) {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+
+    @media (min-width: $min-desktop-width) {
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    @media (min-width: $min-desktop-width) {
+      text-transform: uppercase;
+      color: $white;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      margin-top: 16px;
+      text-decoration: underline;
+    }
+  }
+}

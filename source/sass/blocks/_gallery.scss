@@ -1,0 +1,97 @@
+.gallery {
+  background-color: $white;
+  padding: 20px 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 0;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+.gallery__hashtag {
+  order: 0;
+  background-color: $red;
+  color: $white;
+  padding: 16px;
+
+  @media (min-width: $min-desktop-width) {
+    order: -1;
+    width: 370px;
+    align-self: baseline;
+    margin-bottom: 32px;
+    padding: 32px;
+  }
+
+  .gallery__hashtag-paragraph {
+    margin: 0;
+    text-transform: uppercase;
+
+    @media (min-width: $min-desktop-width) {
+      font-family: "PF Handbook Pro", "Arial", sans-serif;
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .gallery__details-paragraph {
+    @media (min-width: $min-desktop-width) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .gallery__pictures-link {
+    @media (min-width: $min-desktop-width) {
+      color: $white;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
+
+.gallery__picture {
+  position: relative;
+  margin-bottom: 16px;
+  height: 290px;
+
+  @media (min-width: $min-desktop-width) {
+    height: 370px;
+    margin-bottom: 32px;
+  }
+
+  &--center {
+    display: none;
+
+    @media (min-width: $min-desktop-width) {
+      display: block;
+      height: 552px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: 19px;
+    bottom: 19px;
+    transform: scale(0.8);
+  }
+}
+
+.gallery__picture-wrapper {
+  @media (min-width: $min-desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+  }
+}

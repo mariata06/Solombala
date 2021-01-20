@@ -1,0 +1,57 @@
+.feedback-form {
+  @media (min-width: $min-desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+  }
+
+  input {
+    @media (min-width: $min-desktop-width) {
+      width: 270px;
+      height: 32px;
+      margin-bottom: 16px;
+      padding-left: 16px;
+    }
+
+    &::placeholder {
+      color: $light-grey;
+      //padding-left: 16px;
+    }
+  }
+
+  textarea {
+    @media (min-width: $min-desktop-width) {
+      width: 1000%;
+      height: 88px;
+      padding-left: 16px;
+      font-family: "Helvetica Neue", "Arial", sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      padding-top: 7px;
+    }
+
+    &::placeholder {
+      color: $light-grey;
+    }
+  }
+
+  button {
+    @media (min-width: $min-desktop-width) {
+      background-color: $red;
+      color: $white;
+      text-transform: uppercase;
+      font-family: "helvetica-regular", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 5px 15px;
+      margin-top: 28px;
+      margin-bottom: 19px;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}

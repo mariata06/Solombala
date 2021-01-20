@@ -1,0 +1,11 @@
+.page-header__contacts {
+  @media (min-width: $min-desktop-width) {
+    background-color: $orange;
+  }
+}
+
+.page-header__main-menu {
+  @media (min-width: $min-desktop-width) {
+    background-color: $white;
+  }
+}
