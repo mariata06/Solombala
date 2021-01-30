@@ -1,0 +1,11 @@
+input {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,3 +1,23 @@
+.page-header {
+  position: relative;
+  padding: 32px 30px 40px 15px;
+
+  &--show {
+    background-color: $black-secondary;
+    color: $white;
+    padding: 16px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 115;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    padding: 0;
+    //position: unset;
+    position: relative;
+  }
+}
+
 .page-header__contacts {
   @media (min-width: $min-desktop-width) {
     background-color: $orange;

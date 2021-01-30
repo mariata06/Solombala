@@ -1,56 +1,59 @@
 .subscription {
   background-color: $white;
-  //background-image: none;
-  padding: 40px 100px 80px;
+  padding: 20px 16px 40px 16px;
+  color: $white;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 40px 100px 80px;
+  }
 }
 
 .subscription__content {
+  padding: 16px;
+  background-color: $orange;
+
   @media (min-width: $min-desktop-width) {
+    background-color: unset;
     width: 970px;
     height: 372px;
     background-image: url("../img/phone-desktop@1x.png"), linear-gradient(#ffffff 30%, #f9b233 30% 70%);
-    //background-image: url("../img/phone-desktop@1x.png");
     background-size: 38%, 100%;
     background-position: bottom right, top center;
-    //background-repeat: no-repeat, no-repeat;
     padding-top: 134px;
     padding-left: 149px;
     padding-right: 452px;
-    //padding-bottom: 301px;
     background-repeat: no-repeat;
     color: $white;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //width: 970px;
-      //height: 372px;
       background-image: url("../img/phone-desktop@2x.png"), linear-gradient(#ffffff 30%, #f9b233 30% 70%);
-      //background-image: url("../img/phone-desktop@2x.png");
-      //background-repeat: no-repeat, no-repeat;
-      //background-repeat: no-repeat;
-      //background-size: 38%, 100%;
-      //background-position: bottom right, top center;
     }
   }
 
   p {
     margin: 0;
+    margin-bottom: 16px;
 
     &:first-of-type {
+      font-family: "PF Handbook Pro", "Arial", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 24px;
+
       @media (min-width: $min-desktop-width) {
-        font-family: "PF Handbook Pro", "Arial", sans-serif;
-        font-weight: 700;
         font-size: 32px;
         line-height: 32px;
-        text-transform: uppercase;
         margin-bottom: 16px;
       }
     }
 
     &:last-of-type {
+      font-size: 14px;
+      line-height: 18px;
+
       @media (min-width: $min-desktop-width) {
         margin-bottom: 24px;
-        font-size: 14px;
-        line-height: 18px;
       }
     }
   }
@@ -65,16 +68,22 @@
     text-transform: uppercase;
     font-family: "helvetica-regular", "Arial", sans-serif;
     cursor: pointer;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    font-size: 14px;
+    line-height: 14px;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 14px;
-      line-height: 14px;
       padding: 10px 15px;
     }
 
-    &:hover,
+    &:hover {
+      opacity: 0.7;
+    }
+
     &:focus {
       opacity: 0.7;
+      border: 1px solid $black;
     }
   }
 }

@@ -12,11 +12,19 @@
   }
 
   figure {
+    width: 100%;
+
+    &:not(:first-child) {
+      display: none;
+
+      @media (min-width: $min-desktop-width) {
+        display: block;
+      }
+    }
+
     @media (min-width: $min-desktop-width) {
       width: 370px;
-      //filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.05));
       box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
-      //box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
       border-radius: 2px;
     }
   }
@@ -26,11 +34,13 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
 
     @media (min-width: $min-desktop-width) {
       font-size: 48px;
       line-height: 48px;
-      font-weight: 700;
     }
   }
 
@@ -41,10 +51,11 @@
     text-align: center;
     margin: 0 auto;
     align-self: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 10px;
     width: 148px;
     display: block;
+    margin-top: 24px;
+    line-height: 16px;
 
     &:hover,
     &:focus {
@@ -55,6 +66,7 @@
   figcaption {
     display: flex;
     flex-wrap: wrap;
+    padding: 16px;
 
     @media (min-width: $min-desktop-width) {
       padding: 33px;
@@ -64,6 +76,7 @@
       font-family: "helvetica-regular", "Arial", sans-serif;
       width: 88px;
       font-size: 8px;
+      line-height: 8px;
       padding: 0;
       margin: 0;
       margin-top: 16px;
@@ -87,28 +100,38 @@
     a,
     h3,
     p {
+      margin: 0;
+
       @media (min-width: $min-desktop-width) {
         margin: 0;
       }
     }
 
-    h3 {
-      @media (min-width: $min-desktop-width) {
-        font-family: "PF Handbook Pro", "Arial", sans-serif;
-        font-size: 21px;
-        line-height: 25px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 24px;
-        min-height: 75px;
-      }
-    }
-
     p {
+      display: none;
+
       @media (min-width: $min-desktop-width) {
+        display: block;
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 24px;
+      }
+    }
+
+    h3 {
+      font-family: "PF Handbook Pro", "Arial", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+
+      @media (min-width: $min-desktop-width) {
+        font-size: 21px;
+        line-height: 25px;
+
+        margin-bottom: 24px;
+        min-height: 75px;
       }
     }
   }
@@ -119,5 +142,45 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
+  }
+}
+
+.news--promotions .news__content {
+  @media (min-width: $min-desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    display: none;
+
+    @media (min-width: $min-desktop-width) {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    a {
+      margin-right: auto;
+    }
+
+    figcaption {
+      flex-direction: column;
+    }
+  }
+
+  .news__event--newyear {
+    display: block;
+  }
+
+  .news__event-date {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  time {
+    width: 100%;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
   }
 }

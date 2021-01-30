@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Главная Соломбала Молл</title>
+  <title>Отделы Соломбала Молл</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <!-- Link Swiper's CSS -->
@@ -42,17 +42,17 @@
       </div>
       <div class="page-header__main-menu">
         <nav class="page-header__navigation navigation navigation--main-menu container">
-          <a href="" class="navigation__logo">
+          <a href="index.html" class="navigation__logo">
             <picture>
               <source srcset="img/logo-desktop.svg" media="(min-desktop-width: 1440px)">
               <img src="img/logo-mobile.svg" width="130" height="61" alt="Логотип сайта Соломбала Молл">
             </picture>
           </a>
           <ul class="navigation__menu-links">
-            <li><a class="navigation__menu-link navigation__menu-link--active" href="stores.html">Магазины</a></li>
+            <li><a href="stores.html">Магазины</a></li>
             <li><a href="#">Еда</a></li>
             <li><a href="#">Сервисы</a></li>
-            <li><a href="promotions.html">Акции<br class="navigation__menu-link-br">и события</a></li>
+            <li><a class="navigation__menu-link navigation__menu-link--active" href="#">Акции<br class="navigation__menu-link-br">и события</a></li>
             <li><a href="#">Развлечение<br class="navigation__menu-link-br">и обучение</a></li>
             <li><a href="#">Бизнес<br class="navigation__menu-link-br">клубы</a></li>
             <li><a href="#">партнёрам</a></li>
@@ -77,59 +77,35 @@
     </header>
 
     <main class="page-main">
-      <section class="intro">
-        <div class="intro__content">
-          <!-- Swiper -->
-          <div class="swiper-container swiper-container--intro">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-slide__text">
-                  <h1>Осень - это вторая весна! <span>в zolla</span></h1>
-                  <div class="swiper-slide__description">
-                    <p>Встречайте новую коллекцию Zolla.</p>
-                    <p>Сказочная и уютная, яркая и одновременно нежная.</p>
-                    <p>Это Ваша осень. Встречайте ее вместе с Zolla!</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide__text">
-                  <h1>Осень - это вторая весна! <span>в zolla</span></h1>
-                  <div class="swiper-slide__description">
-                    <p>Встречайте новую коллекцию Zolla.</p>
-                    <p>Сказочная и уютная, яркая и одновременно нежная.</p>
-                    <p>Это Ваша осень. Встречайте ее вместе с Zolla!</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide__text">
-                  <h1>Осень - это вторая весна! <span>в zolla</span></h1>
-                  <div class="swiper-slide__description">
-                    <p>Встречайте новую коллекцию Zolla.</p>
-                    <p>Сказочная и уютная, яркая и одновременно нежная.</p>
-                    <p>Это Ваша осень. Встречайте ее вместе с Zolla!</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
 
+      <section class="stores-nav">
+        <h1 class="visually-hidden">Навигация по магазинам</h1>
+        <div class="stores-nav__swiper-container swiper-container swiper-container--stores container">
+          <ul class="stores-nav__list swiper-wrapper swiper-wrapper">
+            <li class="stores-nav__item stores-nav__item--active swiper-slide"><a href="#">все</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">одежда</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">обувь</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">товары для детей</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">нижнее белье</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">сумки. аксессуары</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">косметика. парфюмерия</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">аптеки. оптики</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">товары для дома</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">ювелирные украшения</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">зоотовары</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">автотовары</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">техника и электроника</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">продукты питания</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">цветы и подарки</a></li>
+            <li class="stores-nav__item swiper-slide"><a href="#">сотовая связь</a></li>
+          </ul>
         </div>
       </section>
 
-      <section class="news">
-        <h2>Новости</h2>
+      <section class="news news--promotions">
+        <h2 class="visually-hidden">Акции и события</h2>
         <div class="news__content container">
-          <figure>
+          <figure class="news__event news__event--newyear">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-newyear-desktop@1x.webp 1x, img/news-newyear-desktop@2x.webp 2x">
               <source type="image/webp" srcset="img/news-newyear-mobile@1x.webp 1x, img/news-newyear-mobile@2x.webp 2x">
@@ -138,6 +114,7 @@
             </picture>
             <figcaption>
               <h3>Соломбала Молл зажёг свои огни и провел праздничную программу по открытию ёлки!</h3>
+              <p class="news__event-date"><time datetime="2012-10-17">17.10.2012</time>-<time datetime="2012-10-17">17.12.2020</time></p>
               <p>Друзья! Это свершилось! 17 ноября для юных зрителей проведены театрализованное представление, игрову...</p>
               <a href="#">Читать полностью</a>
             </figcaption>
@@ -152,6 +129,7 @@
             </picture>
             <figcaption>
               <h3>Анонс мероприятий 14 и 15 февраля</h3>
+              <p><time datetime="2012-10-17">17.10.2012</time>-<time datetime="2012-10-17">17.12.2020</time></p>
               <p>Отличный повод отметить торжество любви и романтики в ТРЦ «Соломбала Молл» в День всех в...</p>
               <a href="#">Читать полностью</a>
             </figcaption>
@@ -166,79 +144,56 @@
             </picture>
             <figcaption>
               <h3>Финал конкурса “Я-супер мама”</h3>
+              <p><time datetime="2012-10-17">17.10.2012</time>-<time datetime="2012-10-17">17.12.2020</time></p>
               <p>Друзья, 23 ноября в 15:00 мы узнаем имя победительницы и обладательницы титула «Супер мама»! Не сомн...</p>
               <a href="#">Читать полностью</a>
             </figcaption>
           </figure>
-        </div>
-        <a href="#">Все новости</a>
-      </section>
 
-      <section class="gallery container">
-        <h2 class="visually-hidden">Галерея</h2>
-        <div class="gallery__picture-wrapper">
-          <div class="gallery__hashtag">
-            <p class="gallery__hashtag-paragraph">#Соломбаламолл</p>
-            <p class="gallery__details-paragraph">Подпишись на наши социальные сети и учавствуй в жизни ТЦ для всей семьи</p>
-            <a class="gallery__pictures-link" href="https://www.instagram.com/solombala_mall/?hl=ru">Все фото</a>
-          </div>
-          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture gallery__picture--center">
+          <figure>
             <picture>
-              <source srcset="img/big-gallery-desktop@1x.png 1x, img/big-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
-              <img src="img/big-gallery-desktop@1x.png" srcset="img/big-gallery-desktop@2x.png 2x" alt="Торговый центр">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-competition-desktop@1x.webp 1x, img/news-competition-desktop@2x.webp 2x">
+              <!--<source type="image/webp" srcset="img/news-competition-mobile@1x.webp 1x, img/news-competition-mobile@2x.webp 2x">-->
+              <source srcset="img/news-competition-desktop@1x.png 1x, img/news-competition-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/news-competition-desktop@1x.png" srcset="img/news-competition-desktop@2x.png 2x" alt="Открытие Новогодней елки">
             </picture>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </div>
+            <figcaption>
+              <h3>Финал конкурса “Я-супер мама”</h3>
+              <p><time datetime="2012-10-17">17.10.2012</time>-<time datetime="2012-10-17">17.12.2020</time></p>
+              <p>Друзья, 23 ноября в 15:00 мы узнаем имя победительницы и обладательницы титула «Супер мама»! Не сомн...</p>
+              <a href="#">Читать полностью</a>
+            </figcaption>
+          </figure>
 
-        <div class="gallery__picture-wrapper">
-          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
+          <figure class="news__event news__event--newyear">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/activities-gallery-desktop@1x.webp 1x, img/activities-gallery-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/activities-gallery-mobile@1x.webp 1x, img/activities-gallery-mobile@2x.webp 2x">
-              <source srcset="img/activities-gallery-desktop@1x.png 1x, img/activities-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
-              <img src="img/activities-gallery-mobile@1x.png" srcset="img/activities-gallery-mobile@2x.png 2x" alt="Активности для детей">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-newyear-desktop@1x.webp 1x, img/news-newyear-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/news-newyear-mobile@1x.webp 1x, img/news-newyear-mobile@2x.webp 2x">
+              <source srcset="img/news-newyear-desktop@1x.png 1x, img/news-newyear-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/news-newyear-mobile@1x.png" srcset="img/news-newyear-mobile@2x.png 2x" alt="Открытие Новогодней елки">
             </picture>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/care-gallery-desktop@1x.webp 1x, img/care-gallery-desktop@2x.webp 2x">
-              <img src="img/care-gallery-desktop@1x.png" srcset="img/care-gallery-desktop@2x.png 2x" alt="Забота о вас">
-            </picture>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </div>
+            <figcaption>
+              <h3>Соломбала Молл зажёг свои огни и провел праздничную программу по открытию ёлки!</h3>
+              <p class="news__event-date"><time datetime="2012-10-17">17.10.2012</time>-<time datetime="2012-10-17">17.12.2020</time></p>
+              <p>Друзья! Это свершилось! 17 ноября для юных зрителей проведены театрализованное представление, игрову...</p>
+              <a href="#">Читать полностью</a>
+            </figcaption>
+          </figure>
 
-        <div class="gallery__picture-wrapper">
-          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
+          <figure>
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/girls-gallery-desktop@1x.webp 1x, img/girls-gallery-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/girls-gallery-mobile@1x.webp 1x, img/girls-gallery-mobile@2x.webp 2x">
-              <source srcset="img/girls-gallery-desktop@1x.png 1x, img/gitls-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
-              <img src="img/girls-gallery-mobile@1x.png" srcset="img/girls-gallery-mobile@2x.png 2x" alt="Детская мода">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-february-desktop@1x.webp 1x, img/news-february-desktop@2x.webp 2x">
+              <!--<source type="image/webp" srcset="img/news-february-mobile@1x.webp 1x, img/news-february-mobile@2x.webp 2x">-->
+              <source srcset="img/news-february-desktop@1x.png 1x, img/news-february-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <img src="img/news-february-desktop@1x.png" srcset="img/news-february-desktop@2x.png 2x" alt="Открытие Новогодней елки">
             </picture>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/solombala_mall/?hl=ru" class="gallery__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/shopping-gallery-desktop@1x.webp 1x, img/shopping-gallery-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/shopping-gallery-mobile@1x.webp 1x, img/shopping-gallery-mobile@2x.webp 2x">
-              <source srcset="img/shopping-gallery-desktop@1x.png 1x, img/shopping-gallery-desktop@2x.png 2x" media="(min-width: 1440px)">
-              <img src="img/shopping-gallery-mobile@1x.png" srcset="img/shopping-gallery-mobile@2x.png 2x" alt="Шоппинг для все семьи">
-            </picture>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
+            <figcaption>
+              <h3>Анонс мероприятий 14 и 15 февраля</h3>
+              <p><time datetime="2012-10-17">17.10.2012</time>-<time datetime="2012-10-17">17.12.2020</time></p>
+              <p>Отличный повод отметить торжество любви и романтики в ТРЦ «Соломбала Молл» в День всех в...</p>
+              <a href="#">Читать полностью</a>
+            </figcaption>
+          </figure>
         </div>
       </section>
 

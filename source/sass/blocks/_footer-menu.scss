@@ -1,27 +1,39 @@
 .footer-menu {
+  color: $white;
+  padding: 32px 16px;
+  flex-wrap: wrap;
+
   @media (min-width: $min-desktop-width) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
   }
 }
 
 .footer-menu__contacts {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+  justify-content: space-between;
+
   @media (min-width: $min-desktop-width) {
     color: $white;
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
     width: 250px;
-    flex-direction: column;
+    align-content: baseline;
   }
 
   p {
+    margin: 0;
+    font-size: 8px;
+    line-height: 8px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
     @media (min-width: $min-desktop-width) {
-      margin: 0;
       align-self: baseline;
-      margin-bottom: 16px;
     }
 
     &:last-child {
@@ -32,24 +44,43 @@
   }
 }
 
+.footer-menu__address {
+  width: 130px;
+}
+
+.footer-menu__company {
+  width: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  color: $light-grey;
+}
+
 .footer-menu__links {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+
   @media (min-width: $min-desktop-width) {
-    padding-left: 0;
-    list-style: none;
-    margin: 0;
+    width: 120px;
   }
 
-  li {
+  li:not(.footer-menu__item--social) {
+    width: 50%;
+    margin-bottom: 15px;
+
     @media (min-width: $min-desktop-width) {
       margin-bottom: 40px;
+      width: 100%;
     }
   }
 
   a {
-    @media (min-width: $min-desktop-width) {
-      text-transform: uppercase;
-      color: $white;
-    }
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $white;
 
     &:hover,
     &:focus {
@@ -59,10 +90,8 @@
 }
 
 .footer-menu__social-link {
-  @media (min-width: $min-desktop-width) {
-    svg {
-      fill: $white;
-    }
+  svg {
+    fill: $white;
   }
 
   &--active {
@@ -76,20 +105,34 @@
   @media (min-width: $min-desktop-width) {
     display: inline-block;
   }
+
+  &:not(.footer-menu__item--social) {
+    width: unset;
+    display: inline-block;
+  }
+
+  &--social {
+    margin-right: 16px;
+  }
 }
 
 .footer-menu__feedback {
   p {
+    margin: 0;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
     @media (min-width: $min-desktop-width) {
-      margin: 0;
-      color: $white;
-      text-transform: uppercase;
       margin-bottom: 24px;
     }
   }
 }
 
 .footer-menu__logo {
+  width: 129px;
+  height: 60px;
+
   @media (min-width: $min-desktop-width) {
     margin-bottom: 32px;
     width: 170px;
