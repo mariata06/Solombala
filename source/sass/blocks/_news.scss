@@ -155,13 +155,17 @@
 }
 
 .news--promotions .news__content {
-  @media (min-width: $min-desktop-width) {
+  @media (min-width: $min-tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
 
   figure {
     display: none;
+
+    @media (min-width: $min-tablet-width) {
+      display: block;
+    }
 
     @media (min-width: $min-desktop-width) {
       display: block;

@@ -3,6 +3,10 @@
   padding: 20px 16px 40px 16px;
   color: $white;
 
+  @media (min-width: $min-tablet-width) {
+    padding: 20px 30px 40px;
+  }
+
   @media (min-width: $min-desktop-width) {
     padding: 40px 100px 80px;
   }

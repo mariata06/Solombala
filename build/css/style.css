@@ -455,6 +455,8 @@ a {
   background-color: transparent;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   cursor: pointer; }
+  .button:focus {
+    border: 1px solid #000000; }
   .button:focus, .button:hover {
     opacity: 0.7; }
     .button:focus svg, .button:hover svg {
@@ -542,10 +544,11 @@ input {
       .news figcaption {
         padding: 33px; } }
     .news figcaption a {
-      font-family: "helvetica-regular", "Arial", sans-serif;
-      width: 88px;
       font-size: 8px;
       line-height: 8px;
+      font-weight: 400;
+      font-family: "helvetica-regular", "Arial", sans-serif;
+      width: 88px;
       padding: 0;
       margin: 0;
       margin-top: 16px;
@@ -557,9 +560,10 @@ input {
         opacity: 0.7; }
       @media (min-width: 1440px) {
         .news figcaption a {
-          width: unset;
           font-size: 14px;
-          line-height: 14px; } }
+          line-height: 14px;
+          font-weight: 400;
+          width: unset; } }
     .news figcaption a,
     .news figcaption h3,
     .news figcaption p {
@@ -573,21 +577,25 @@ input {
       display: none; }
       @media (min-width: 1440px) {
         .news figcaption p {
-          display: block;
           font-size: 14px;
           line-height: 18px;
+          font-weight: 400;
+          display: block;
           margin-bottom: 24px; } }
     .news figcaption h3 {
-      font-family: "PF Handbook Pro", "Arial", sans-serif;
       font-size: 16px;
       line-height: 19px;
       font-weight: 700;
+      color: #000000;
+      font-family: "PF Handbook Pro", "Arial", sans-serif;
       text-transform: uppercase;
       margin-bottom: 16px; }
       @media (min-width: 1440px) {
         .news figcaption h3 {
           font-size: 21px;
           line-height: 25px;
+          font-weight: 700;
+          color: #000000;
           margin-bottom: 24px;
           min-height: 75px; } }
 
@@ -633,10 +641,11 @@ input {
   margin-bottom: 16px; }
 
 .news--promotions .news__content time {
-  width: 100%;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  width: 100%; }
 
 .gallery {
   background-color: #ffffff;
@@ -794,9 +803,7 @@ input {
       background-image: url("../img/phone-desktop@1x.png"), linear-gradient(#ffffff 30%, #f9b233 30% 70%);
       background-size: 38%, 100%;
       background-position: bottom right, top center;
-      padding-top: 134px;
-      padding-left: 149px;
-      padding-right: 452px;
+      padding: 134px 452px 16px 149px;
       background-repeat: no-repeat;
       color: #ffffff; } }
   @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
@@ -807,34 +814,37 @@ input {
     margin: 0;
     margin-bottom: 16px; }
     .subscription__content p:first-of-type {
-      font-family: "PF Handbook Pro", "Arial", sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
       font-size: 24px;
-      line-height: 24px; }
+      line-height: 24px;
+      font-weight: 700;
+      font-family: "PF Handbook Pro", "Arial", sans-serif;
+      text-transform: uppercase; }
       @media (min-width: 1440px) {
         .subscription__content p:first-of-type {
           font-size: 32px;
           line-height: 32px;
+          font-weight: 700;
           margin-bottom: 16px; } }
     .subscription__content p:last-of-type {
       font-size: 14px;
-      line-height: 18px; }
+      line-height: 18px;
+      font-weight: 400; }
       @media (min-width: 1440px) {
         .subscription__content p:last-of-type {
           margin-bottom: 24px; } }
   .subscription__content span {
     color: #e74011; }
   .subscription__content button {
-    background-color: #e74011;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
     color: #ffffff;
-    text-transform: uppercase;
     font-family: "helvetica-regular", "Arial", sans-serif;
+    background-color: #e74011;
+    text-transform: uppercase;
     cursor: pointer;
     border: 1px solid transparent;
-    padding: 5px 15px;
-    font-size: 14px;
-    line-height: 14px; }
+    padding: 5px 15px; }
     @media (min-width: 1440px) {
       .subscription__content button {
         padding: 10px 15px; } }
@@ -1033,10 +1043,10 @@ input {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  background-color: #e74011;
   color: #ffffff;
-  text-transform: uppercase;
   font-family: "helvetica-regular", "Arial", sans-serif;
+  background-color: #e74011;
+  text-transform: uppercase;
   padding: 5px 15px;
   margin-top: 28px;
   margin-bottom: 32px;
@@ -1063,6 +1073,7 @@ input {
   .popup__search input {
     font-size: 14px;
     line-height: 18px;
+    font-weight: 400;
     width: 100%;
     padding-left: 5px;
     padding-bottom: 5px;
@@ -1089,11 +1100,12 @@ input {
     height: auto;
     z-index: 102; }
   .popup__search .popup__search-submit {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
     background-color: #e74011;
     padding: 5px 10px;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 14px;
     text-transform: uppercase;
     margin-left: 10px;
     display: none; }
@@ -1169,11 +1181,12 @@ input {
     background-color: #e74011;
     color: #ffffff; }
   .stores-nav a {
-    padding: 5px 15px;
-    background-color: #ffffff;
-    font-family: "helvetica-regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 14px;
+    font-weight: 400;
+    font-family: "helvetica-regular", "Arial", sans-serif;
+    padding: 5px 15px;
+    background-color: #ffffff;
     color: #000000;
     text-transform: uppercase; }
     .stores-nav a:focus, .stores-nav a:hover {
@@ -1221,10 +1234,7 @@ input {
   padding: 40px 15px 0; }
   @media (min-width: 1440px) {
     .stores-catalog__list {
-      padding-top: 80px;
-      padding-bottom: 40px;
-      padding-left: 100px;
-      padding-right: 113px; } }
+      padding: 80px 113px 40px 100px; } }
 
 @media (min-width: 1440px) {
   .stores-catalog__item-picture {
@@ -1244,20 +1254,24 @@ input {
   .stores-catalog__item-desc p {
     margin: 0; }
   .stores-catalog__item-desc h2 {
-    font-family: "PF Handbook Pro", "Arial", sans-serif;
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
+    color: #000000;
+    font-family: "PF Handbook Pro", "Arial", sans-serif;
     text-transform: uppercase;
     margin-bottom: 16px; }
     @media (min-width: 1440px) {
       .stores-catalog__item-desc h2 {
         font-size: 21px;
-        line-height: 25px; } }
+        line-height: 25px;
+        font-weight: 700;
+        color: #000000; } }
   .stores-catalog__item-desc p {
-    font-family: "Helvetica Neue", "Arial", sans-serif;
     font-size: 14px;
-    line-height: 18px; }
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Arial", sans-serif; }
   .stores-catalog__item-desc .stores-catalog__item-info {
     margin-top: 16px;
     margin-bottom: 8px; }
@@ -1267,9 +1281,10 @@ input {
   .stores-catalog__item-desc .stores-catalog__item-category {
     text-transform: uppercase; }
   .stores-catalog__item-desc .stores-catalog__item-link {
-    font-family: "helvetica-regular", "Arial", sans-serif;
     font-size: 8px;
     line-height: 8px;
+    font-weight: 400;
+    font-family: "helvetica-regular", "Arial", sans-serif;
     text-transform: uppercase;
     color: #e74011;
     margin-top: 16px;
@@ -1278,4 +1293,5 @@ input {
       .stores-catalog__item-desc .stores-catalog__item-link {
         font-size: 14px;
         line-height: 14px;
+        font-weight: 400;
         margin-top: 32px; } }

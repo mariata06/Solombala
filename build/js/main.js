@@ -94,8 +94,8 @@ var swiperExist = false;
 **************************************************************/
 function swiperMode() {
   let mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)"); // было max-width: 768px
-  let tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)"); // было (min-width: 769px) and (max-width: 1024px)
-  let desktop = window.matchMedia("(min-width: 1024px)"); // было (min-width: 1025px)
+  let tablet = window.matchMedia("(min-width: 768px) and (max-width: 1439px)"); // было (min-width: 768px) and (max-width: 1023px)
+  let desktop = window.matchMedia("(min-width: 1440px)"); // было (min-width: 1024px)
 
   // Enable (for mobile)
   if(mobile.matches) {
@@ -106,13 +106,17 @@ function swiperMode() {
       });
     }
   }
-  // Disable (for tablet)
+
+  // Enable (for tablet)
   else if(tablet.matches) {
-    if (swiperExist) {
-      swiper2.destroy();
-      swiperExist = false;
+    if (!swiperExist) {
+      swiperExist = true;
+      swiper2 = new Swiper(".swiper-container.swiper-container--stores", {
+        slidesPerView: "auto", //1.9,//window.innerWidth*3.1/568 + 5 - 3.1*768/568,//1.9,
+      });
     }
   }
+
   // Disable (for desktop)
   else if(desktop.matches) {
     if (swiperExist) {
