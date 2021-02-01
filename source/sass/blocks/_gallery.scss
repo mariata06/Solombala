@@ -3,12 +3,15 @@
   padding: 20px 15px 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 20px 30px;
+  }
 
   @media (min-width: $min-desktop-width) {
-    padding: 0;
     justify-content: space-between;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 40px 30px;
   }
 }
 
@@ -27,35 +30,30 @@
   }
 
   .gallery__hashtag-paragraph {
+    @include text ($font-24, $line-height-24, $regular);
     font-family: "PF Handbook Pro", "Arial", sans-serif;
-    font-size: 24px;
-    line-height: 24px;
     margin: 0;
     text-transform: uppercase;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 32px;
-      line-height: 32px;
+      @include text ($font-32, $line-height-32, $regular);
       margin-bottom: 16px;
     }
   }
 
   .gallery__details-paragraph {
-    font-size: 16px;
-    line-height: 21px;
+    @include text ($font-16, $line-height-21, $regular);
 
     @media (min-width: $min-desktop-width) {
-      font-size: 14px;
-      line-height: 18px;
+      @include text ($font-14, $line-height-18, $regular);
     }
   }
 
   .gallery__pictures-link {
+    @include text ($font-16, $line-height-21, $regular);
     color: $white;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 16px;
-    line-height: 21px;
 
     &:hover,
     &:focus {
@@ -63,19 +61,22 @@
     }
 
     @media (min-width: $min-desktop-width) {
-      font-size: 14px;
-      line-height: 18px;
+      @include text ($font-14, $line-height-18, $regular);
     }
   }
 }
 
 .gallery__picture {
   position: relative;
-  margin-bottom: 16px;
-  //width: 100%;
-  //width: 290px;
   height: 290px;
   display: block;
+  margin: 0 auto 16px;
+  text-align: center;
+
+  @media (min-width: $min-tablet-width) {
+    margin: 0 0 16px 0;
+    text-align: unset;
+  }
 
   @media (min-width: $min-desktop-width) {
     height: 370px;
@@ -108,6 +109,12 @@
 }
 
 .gallery__picture-wrapper {
+  width: 100%;
+
+  @media (min-width: $min-tablet-width) {
+    width: auto;
+  }
+
   &:not(:last-of-type) {
     order: 0;
 
@@ -115,7 +122,7 @@
       &:not(:first-of-type) {
         display: none;
 
-        @media (min-width: $min-desktop-width) {
+        @media (min-width: $min-tablet-width) {
           display: block;
         }
       }

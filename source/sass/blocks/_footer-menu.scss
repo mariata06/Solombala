@@ -26,9 +26,8 @@
   }
 
   p {
+    @include text ($font-8, $line-height-8, $regular);
     margin: 0;
-    font-size: 8px;
-    line-height: 8px;
     text-transform: uppercase;
     margin-bottom: 16px;
 
@@ -56,9 +55,7 @@
 }
 
 .footer-menu__links {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
   align-content: baseline;

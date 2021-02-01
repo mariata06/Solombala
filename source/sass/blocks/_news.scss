@@ -2,6 +2,10 @@
   background-color: $white;
   padding: 40px 15px 20px;
 
+  @media (min-width: $min-tablet-width) {
+    padding: 40px 30px 20px;
+  }
+
   @media (min-width: $min-desktop-width) {
     padding-bottom: 40px;
   }
@@ -12,7 +16,8 @@
   }
 
   figure {
-    width: 100%;
+    width: 290px;
+    margin: 0 auto;
 
     &:not(:first-child) {
       display: none;
@@ -20,6 +25,17 @@
       @media (min-width: $min-desktop-width) {
         display: block;
       }
+    }
+
+    &:not(:last-child) {
+      @media (min-width: $min-tablet-width) {
+        display: block;
+      }
+    }
+
+    @media (min-width: $min-tablet-width) {
+      width: 290px;
+      display: block;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -30,17 +46,14 @@
   }
 
   h2 {
+    @include title ($font-24, $line-height-24, $bold, $black);
     font-family: "PF Handbook Pro", "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 700;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 48px;
-      line-height: 48px;
+      @include title ($font-48, $line-height-48, $bold, $black);
     }
   }
 
@@ -73,10 +86,9 @@
     }
 
     a {
+      @include text ($font-8, $line-height-8, $regular);
       font-family: "helvetica-regular", "Arial", sans-serif;
       width: 88px;
-      font-size: 8px;
-      line-height: 8px;
       padding: 0;
       margin: 0;
       margin-top: 16px;
@@ -91,9 +103,8 @@
       }
 
       @media (min-width: $min-desktop-width) {
+        @include text ($font-14, $line-height-14, $regular);
         width: unset;
-        font-size: 14px;
-        line-height: 14px;
       }
     }
 
@@ -111,25 +122,20 @@
       display: none;
 
       @media (min-width: $min-desktop-width) {
+        @include text ($font-14, $line-height-18, $regular);
         display: block;
-        font-size: 14px;
-        line-height: 18px;
         margin-bottom: 24px;
       }
     }
 
     h3 {
+      @include title ($font-16, $line-height-19, $bold, $black);
       font-family: "PF Handbook Pro", "Arial", sans-serif;
-      font-size: 16px;
-      line-height: 19px;
-      font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 16px;
 
       @media (min-width: $min-desktop-width) {
-        font-size: 21px;
-        line-height: 25px;
-
+        @include title ($font-21, $line-height-25, $bold, $black);
         margin-bottom: 24px;
         min-height: 75px;
       }
@@ -138,9 +144,12 @@
 }
 
 .news__content {
-  @media (min-width: $min-desktop-width) {
+  @media (min-width: $min-tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $min-desktop-width) {
     margin-bottom: 36px;
   }
 }
@@ -178,9 +187,8 @@
   }
 
   time {
-    width: 100%;
+    @include text ($font-14, $line-height-18, $regular);
     font-family: "Helvetica Neue", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    width: 100%;
   }
 }

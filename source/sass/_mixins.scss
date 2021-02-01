@@ -1,0 +1,25 @@
+@mixin title ($size, $height, $weight, $color) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin button ($size, $height, $weight, $color) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin text ($size, $height, $weight) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

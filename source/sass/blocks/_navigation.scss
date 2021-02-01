@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     @media (min-width: $min-desktop-width) {
       flex-wrap: nowrap;
@@ -95,10 +96,8 @@
 }
 
 .navigation__social-list {
+  @include list-reset;
   display: flex;
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
   justify-content: space-between;
 
   @media (min-width: $min-desktop-width) {
@@ -128,10 +127,8 @@
 }
 
 .navigation__menu-links {
+  @include list-reset;
   display: none;
-  margin: 0;
-  list-style: none;
-  padding-left: 0;
 
   &--show {
     display: block;
@@ -193,6 +190,7 @@
   align-items: center;
   padding: 5px 20px;
   justify-content: flex-end;
+  margin-left: auto;
 
   &--hide {
     display: none;
@@ -205,8 +203,6 @@
 
 .navigation__menu-open {
   display: block;
-  margin-left: auto;
-  //margin-right: 30px;
 
   &--hide {
     display: none;
@@ -234,9 +230,6 @@
 
 .navigation__logo {
   height: 61px;
-  //margin-top: 32px;
-  //margin-left: 16px;
-  //margin-bottom: 40px;
 
   &--hide {
     display: none;

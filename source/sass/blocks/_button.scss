@@ -6,6 +6,10 @@
   font-family: "Helvetica Neue", "Arial", sans-serif;
   cursor: pointer;
 
+  &:focus {
+    border: 1px solid $black;
+  }
+
   &:focus,
   &:hover {
     opacity: 0.7;

@@ -15,8 +15,7 @@
   }
 
   input {
-    font-size: 14px;
-    line-height: 18px;
+    @include text ($font-14, $line-height-18, $regular);
     width: 100%;
     padding-left: 5px;
     padding-bottom: 5px;
@@ -44,11 +43,10 @@
   }
 
   .popup__search-submit {
+    @include text ($font-14, $line-height-14, $regular);
     background-color: $red;
     padding: 5px 10px;
     color: $white;
-    font-size: 14px;
-    line-height: 14px;
     text-transform: uppercase;
     margin-left: 10px;
     display: none;
@@ -77,8 +75,12 @@
   .popup__search-close {
     fill: $red;
     position: absolute;
-    top: -75px;
+    top: -79px;
     right: 80px;
+
+    @media (min-width: $min-tablet-width) {
+      right: 80px;
+    }
 
     @media (min-width: $min-desktop-width) {
       display: none;
@@ -87,7 +89,6 @@
 }
 
 .popup__overlay {
-  //display: block;
   display: none;
   position: fixed;
   left: 0;

@@ -47,10 +47,7 @@
   padding: 40px 15px 0;
 
   @media (min-width: $min-desktop-width) {
-    padding-top: 80px;
-    padding-bottom: 40px;
-    padding-left: 100px;
-    padding-right: 113px;
+    padding: 80px 113px 40px 100px;
   }
 }
 
@@ -75,23 +72,19 @@
   }
 
   h2 {
+    @include title ($font-16, $line-height-19, $bold, $black);
     font-family: "PF Handbook Pro", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 16px;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 21px;
-      line-height: 25px;
+      @include title ($font-21, $line-height-25, $bold, $black);
     }
   }
 
   p {
+    @include text ($font-14, $line-height-18, $regular);
     font-family: "Helvetica Neue", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
   }
 
   .stores-catalog__item-info {
@@ -108,17 +101,15 @@
   }
 
   .stores-catalog__item-link {
+    @include text ($font-8, $line-height-8, $regular);
     font-family: "helvetica-regular", "Arial", sans-serif;
-    font-size: 8px;
-    line-height: 8px;
     text-transform: uppercase;
     color: $red;
     margin-top: 16px;
     display: block;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 14px;
-      line-height: 14px;
+      @include text ($font-14, $line-height-14, $regular);
       margin-top: 32px;
     }
   }

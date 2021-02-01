@@ -34,11 +34,10 @@
   }
 
   a {
+    @include text ($font-14, $line-height-14, $regular);
+    font-family: "helvetica-regular", "Arial", sans-serif;
     padding: 5px 15px;
     background-color: $white;
-    font-family: "helvetica-regular", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 14px;
     color: $black;
     text-transform: uppercase;
 

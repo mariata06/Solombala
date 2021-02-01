@@ -7,20 +7,21 @@
   }
 
   h1 {
+    @include title ($font-40, $line-height-40, $bold, $white);
     font-family: "PF Handbook Pro", "Arial", sans-serif;
-    font-weight: 700;
     margin: 0 auto;
-    color: $white;
     text-transform: uppercase;
     text-align: center;
     width: 260px;
     display: block;
-    font-size: 40px;
-    line-height: 40px;
+
+    @media (min-width: $min-tablet-width) {
+      @include title ($font-60, $line-height-60, $bold, $white);
+      width: 70%;
+    }
 
     @media (min-width: $min-desktop-width) {
-      font-size: 90px;
-      line-height: 90px;
+      @include title ($font-90, $line-height-90, $bold, $white);
       width: 770px;
       margin-bottom: 40px;
     }
@@ -36,11 +37,10 @@
     margin: 0;
 
     @media (min-width: $min-desktop-width) {
+      @include text ($font-24, $line-height-24, $regular);
       text-align: center;
       text-transform: uppercase;
       color: $white;
-      font-size: 24px;
-      line-height: 24px;
       margin-bottom: 5px;
     }
   }
@@ -73,9 +73,13 @@
     background-image: url("../img/slider-mobile@2x.png");
   }
 
+  @media (min-width: $min-tablet-width) {
+    padding-top: 170px;
+    padding-bottom: 220px;
+  }
+
   @media (min-width: $min-desktop-width) {
     background-image: url("../img/slider-desktop@1x.png");
-    //background-size: cover;
     background-size: 100%;
     padding-top: 110px;
     padding-bottom: 160px;

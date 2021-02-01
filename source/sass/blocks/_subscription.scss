@@ -19,9 +19,7 @@
     background-image: url("../img/phone-desktop@1x.png"), linear-gradient(#ffffff 30%, #f9b233 30% 70%);
     background-size: 38%, 100%;
     background-position: bottom right, top center;
-    padding-top: 134px;
-    padding-left: 149px;
-    padding-right: 452px;
+    padding: 134px 452px 16px 149px;
     background-repeat: no-repeat;
     color: $white;
 
@@ -35,22 +33,18 @@
     margin-bottom: 16px;
 
     &:first-of-type {
+      @include text ($font-24, $line-height-24, $bold);
       font-family: "PF Handbook Pro", "Arial", sans-serif;
-      font-weight: 700;
       text-transform: uppercase;
-      font-size: 24px;
-      line-height: 24px;
 
       @media (min-width: $min-desktop-width) {
-        font-size: 32px;
-        line-height: 32px;
+        @include text ($font-32, $line-height-32, $bold);
         margin-bottom: 16px;
       }
     }
 
     &:last-of-type {
-      font-size: 14px;
-      line-height: 18px;
+      @include text ($font-14, $line-height-18, $regular);
 
       @media (min-width: $min-desktop-width) {
         margin-bottom: 24px;
@@ -63,15 +57,13 @@
   }
 
   button {
-    background-color: $red;
-    color: $white;
-    text-transform: uppercase;
+    @include button ($font-14, $line-height-14, $regular, $white);
     font-family: "helvetica-regular", "Arial", sans-serif;
+    background-color: $red;
+    text-transform: uppercase;
     cursor: pointer;
     border: 1px solid transparent;
     padding: 5px 15px;
-    font-size: 14px;
-    line-height: 14px;
 
     @media (min-width: $min-desktop-width) {
       padding: 10px 15px;

@@ -72,6 +72,9 @@ a {
 .page-header {
   position: relative;
   padding: 32px 30px 40px 15px; }
+  @media (min-width: 768px) {
+    .page-header {
+      padding-left: 30px; } }
   .page-header--show {
     background-color: #202020;
     color: #ffffff;
@@ -153,7 +156,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (min-width: 1440px) {
     .navigation--main-menu {
       -ms-flex-wrap: nowrap;
@@ -189,12 +195,12 @@ a {
               justify-content: space-between; } }
 
 .navigation__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -214,10 +220,10 @@ a {
     fill: #e74011; }
 
 .navigation__menu-links {
-  display: none;
-  margin: 0;
   list-style: none;
-  padding-left: 0; }
+  padding: 0;
+  margin: 0;
+  display: none; }
   .navigation__menu-links--show {
     display: block;
     width: 100%; }
@@ -270,7 +276,8 @@ a {
   padding: 5px 20px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  margin-left: auto; }
   .navigation .navigation__search-open--hide {
     display: none; }
   @media (min-width: 1440px) {
@@ -278,8 +285,7 @@ a {
       padding-right: 0; } }
 
 .navigation__menu-open {
-  display: block;
-  margin-left: auto; }
+  display: block; }
   .navigation__menu-open--hide {
     display: none; }
   @media (min-width: 1440px) {
@@ -322,20 +328,29 @@ a {
       padding: 20px 0 70px;
       min-height: 266px; } }
   .intro h1 {
-    font-family: "PF Handbook Pro", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 700;
-    margin: 0 auto;
     color: #ffffff;
+    font-family: "PF Handbook Pro", "Arial", sans-serif;
+    margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
     width: 260px;
-    display: block;
-    font-size: 40px;
-    line-height: 40px; }
+    display: block; }
+    @media (min-width: 768px) {
+      .intro h1 {
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 700;
+        color: #ffffff;
+        width: 70%; } }
     @media (min-width: 1440px) {
       .intro h1 {
         font-size: 90px;
         line-height: 90px;
+        font-weight: 700;
+        color: #ffffff;
         width: 770px;
         margin-bottom: 40px; } }
     @media (min-width: 1440px) {
@@ -345,11 +360,12 @@ a {
     margin: 0; }
     @media (min-width: 1440px) {
       .intro p {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
         text-align: center;
         text-transform: uppercase;
         color: #ffffff;
-        font-size: 24px;
-        line-height: 24px;
         margin-bottom: 5px; } }
   .intro a:hover, .intro a:focus {
     opacity: 0.7; }
@@ -371,6 +387,10 @@ a {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .swiper-slide {
       background-image: url("../img/slider-mobile@2x.png"); } }
+  @media (min-width: 768px) {
+    .swiper-slide {
+      padding-top: 170px;
+      padding-bottom: 220px; } }
   @media (min-width: 1440px) {
     .swiper-slide {
       background-image: url("../img/slider-desktop@1x.png");
@@ -451,6 +471,9 @@ input {
 .news {
   background-color: #ffffff;
   padding: 40px 15px 20px; }
+  @media (min-width: 768px) {
+    .news {
+      padding: 40px 30px 20px; } }
   @media (min-width: 1440px) {
     .news {
       padding-bottom: 40px; } }
@@ -458,12 +481,20 @@ input {
   .news h2 {
     margin: 0; }
   .news figure {
-    width: 100%; }
+    width: 290px;
+    margin: 0 auto; }
     .news figure:not(:first-child) {
       display: none; }
       @media (min-width: 1440px) {
         .news figure:not(:first-child) {
           display: block; } }
+    @media (min-width: 768px) {
+      .news figure:not(:last-child) {
+        display: block; } }
+    @media (min-width: 768px) {
+      .news figure {
+        width: 290px;
+        display: block; } }
     @media (min-width: 1440px) {
       .news figure {
         width: 370px;
@@ -471,17 +502,20 @@ input {
                 box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
         border-radius: 2px; } }
   .news h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
     font-family: "PF Handbook Pro", "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 700; }
+    margin-bottom: 32px; }
     @media (min-width: 1440px) {
       .news h2 {
         font-size: 48px;
-        line-height: 48px; } }
+        line-height: 48px;
+        font-weight: 700;
+        color: #000000; } }
   .news a {
     color: #ffffff;
     background-color: #e74011;
@@ -557,14 +591,16 @@ input {
           margin-bottom: 24px;
           min-height: 75px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .news__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (min-width: 1440px) {
+  .news__content {
     margin-bottom: 36px; } }
 
 @media (min-width: 1440px) {
@@ -609,15 +645,18 @@ input {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media (min-width: 768px) {
+    .gallery {
+      padding: 20px 30px; } }
   @media (min-width: 1440px) {
     .gallery {
-      padding: 0;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding-bottom: 40px;
-      padding-top: 40px; } }
+      padding: 40px 30px; } }
 
 .gallery__hashtag {
   -webkit-box-ordinal-group: 1;
@@ -637,41 +676,52 @@ input {
       margin-bottom: 32px;
       padding: 32px; } }
   .gallery__hashtag .gallery__hashtag-paragraph {
-    font-family: "PF Handbook Pro", "Arial", sans-serif;
     font-size: 24px;
     line-height: 24px;
+    font-weight: 400;
+    font-family: "PF Handbook Pro", "Arial", sans-serif;
     margin: 0;
     text-transform: uppercase; }
     @media (min-width: 1440px) {
       .gallery__hashtag .gallery__hashtag-paragraph {
         font-size: 32px;
         line-height: 32px;
+        font-weight: 400;
         margin-bottom: 16px; } }
   .gallery__hashtag .gallery__details-paragraph {
     font-size: 16px;
-    line-height: 21px; }
+    line-height: 21px;
+    font-weight: 400; }
     @media (min-width: 1440px) {
       .gallery__hashtag .gallery__details-paragraph {
         font-size: 14px;
-        line-height: 18px; } }
+        line-height: 18px;
+        font-weight: 400; } }
   .gallery__hashtag .gallery__pictures-link {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 21px; }
+    cursor: pointer; }
     .gallery__hashtag .gallery__pictures-link:hover, .gallery__hashtag .gallery__pictures-link:focus {
       opacity: 0.7; }
     @media (min-width: 1440px) {
       .gallery__hashtag .gallery__pictures-link {
         font-size: 14px;
-        line-height: 18px; } }
+        line-height: 18px;
+        font-weight: 400; } }
 
 .gallery__picture {
   position: relative;
-  margin-bottom: 16px;
   height: 290px;
-  display: block; }
+  display: block;
+  margin: 0 auto 16px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .gallery__picture {
+      margin: 0 0 16px 0;
+      text-align: unset; } }
   @media (min-width: 1440px) {
     .gallery__picture {
       height: 370px;
@@ -692,34 +742,37 @@ input {
   .gallery__picture:hover svg, .gallery__picture:focus svg {
     opacity: 0.7; }
 
-.gallery__picture-wrapper:not(:last-of-type) {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0; }
-  .gallery__picture-wrapper:not(:last-of-type) .gallery__picture:not(:first-of-type) {
-    display: none; }
+.gallery__picture-wrapper {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .gallery__picture-wrapper {
+      width: auto; } }
+  .gallery__picture-wrapper:not(:last-of-type) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; }
+    .gallery__picture-wrapper:not(:last-of-type) .gallery__picture:not(:first-of-type) {
+      display: none; }
+      @media (min-width: 768px) {
+        .gallery__picture-wrapper:not(:last-of-type) .gallery__picture:not(:first-of-type) {
+          display: block; } }
+  .gallery__picture-wrapper:first-of-type {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
     @media (min-width: 1440px) {
-      .gallery__picture-wrapper:not(:last-of-type) .gallery__picture:not(:first-of-type) {
-        display: block; } }
-
-.gallery__picture-wrapper:first-of-type {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3; }
+      .gallery__picture-wrapper:first-of-type {
+        -webkit-box-ordinal-group: unset;
+            -ms-flex-order: unset;
+                order: unset; } }
   @media (min-width: 1440px) {
-    .gallery__picture-wrapper:first-of-type {
-      -webkit-box-ordinal-group: unset;
-          -ms-flex-order: unset;
-              order: unset; } }
-
-@media (min-width: 1440px) {
-  .gallery__picture-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 370px; } }
+    .gallery__picture-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 370px; } }
 
 .subscription {
   background-color: #ffffff;
@@ -832,9 +885,10 @@ input {
       -ms-flex-line-pack: baseline;
           align-content: baseline; } }
   .footer-menu__contacts p {
-    margin: 0;
     font-size: 8px;
     line-height: 8px;
+    font-weight: 400;
+    margin: 0;
     text-transform: uppercase;
     margin-bottom: 16px; }
     @media (min-width: 1440px) {
@@ -855,8 +909,8 @@ input {
   color: #b8b8b8; }
 
 .footer-menu__links {
-  padding-left: 0;
   list-style: none;
+  padding: 0;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -931,12 +985,13 @@ input {
     width: 370px; } }
 
 .feedback-form input {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
   height: 32px;
   width: 100%;
   margin-bottom: 16px;
   padding-left: 16px;
-  font-size: 16px;
-  line-height: 16px;
   background-color: #ffffff; }
   @media (min-width: 1440px) {
     .feedback-form input {
@@ -953,12 +1008,13 @@ input {
     color: #b8b8b8; }
 
 .feedback-form textarea {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
   width: 100%;
   height: 88px;
   padding-left: 16px;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
   padding-top: 7px; }
   .feedback-form textarea:focus, .feedback-form textarea:hover {
     opacity: 0.9; }
@@ -974,12 +1030,13 @@ input {
     color: #b8b8b8; }
 
 .feedback-form button {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
   background-color: #e74011;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "helvetica-regular", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
   padding: 5px 15px;
   margin-top: 28px;
   margin-bottom: 32px;
@@ -1059,8 +1116,11 @@ input {
   .popup__search .popup__search-close {
     fill: #e74011;
     position: absolute;
-    top: -75px;
+    top: -79px;
     right: 80px; }
+    @media (min-width: 768px) {
+      .popup__search .popup__search-close {
+        right: 80px; } }
     @media (min-width: 1440px) {
       .popup__search .popup__search-close {
         display: none; } }
