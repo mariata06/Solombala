@@ -16,9 +16,11 @@
     <header class="page-header">
       <div class="page-header__contacts">
         <nav class="page-header__navigation navigation navigation--contacts container">
-          <p>Архангельск, Советская, 25</p>
-          <p>ТРЦ 10:00 − 21:00</p>
-          <p>ЛЕНТА 09:00 − 23:00</p>
+          <ul class="navigation__address">
+            <li>Архангельск, Советская, 25</li>
+            <li>ТРЦ 10:00 − 21:00</li>
+            <li>ЛЕНТА 09:00 − 23:00</li>
+          </ul>
           <nav class="navigation__social">
             <ul class="navigation__social-list">
               <li>
@@ -58,7 +60,7 @@
             <li><a href="#">партнёрам</a></li>
           </ul>
           <button type="button" class="navigation__search-open button">
-            <svg width="16" height="16" class="search-form__svg">
+            <svg width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
           </button>
@@ -281,6 +283,7 @@
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 
 </body>

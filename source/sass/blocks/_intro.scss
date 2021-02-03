@@ -2,8 +2,8 @@
   min-height: 266px;
 
   @media (min-width: $min-desktop-width) {
-    padding: 20px 0 70px;
-    min-height: 266px;
+    //padding: 20px 0 70px;
+    min-height: 616px;
   }
 
   h1 {
@@ -80,7 +80,7 @@
 
   @media (min-width: $min-desktop-width) {
     background-image: url("../img/slider-desktop@1x.png");
-    background-size: 100%;
+    background-size: cover;
     padding-top: 110px;
     padding-bottom: 160px;
 
@@ -107,6 +107,14 @@
   content: url("../img/icon-arrow.svg");
   left: 134px;
   transform: rotate(-180deg);
+}
+
+.swiper-pagination {
+  margin-bottom: 32px;
+
+  @media (min-width: $min-desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .swiper-pagination-bullet {

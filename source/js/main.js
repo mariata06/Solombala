@@ -61,7 +61,18 @@ searchClose.addEventListener("click", function (evt) {
   popupOverlay.classList.remove("popup__overlay--show");
   htmlDoc.classList.toggle("disable-scroll");
   searchButton.classList.remove("navigation__search-open--hide");
-})
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popupOverlay.classList.contains("popup__overlay--show")) {
+      popupOverlay.classList.remove("popup__overlay--show");
+      htmlDoc.classList.toggle("disable-scroll");
+      searchButton.classList.remove("navigation__search-open--hide");
+    }
+  }
+});
 
 document.onclick = function (evt) {
   if (evt.target.className.toString().includes("overlay")) {
@@ -118,9 +129,11 @@ function swiperMode() {
   }
 
   // Disable (for desktop)
-  else if(desktop.matches) {
+  else if(desktop.matches) {320
     if (swiperExist) {
-      swiper2.destroy();
+      if (swiper2) {
+        swiper2.destroy();
+      }
       swiperExist = false;
     }
   }

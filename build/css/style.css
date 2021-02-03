@@ -611,7 +611,7 @@ input {
   .news__content {
     margin-bottom: 36px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .news--promotions .news__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -621,6 +621,9 @@ input {
 
 .news--promotions .news__content figure {
   display: none; }
+  @media (min-width: 768px) {
+    .news--promotions .news__content figure {
+      display: block; } }
   @media (min-width: 1440px) {
     .news--promotions .news__content figure {
       display: block;
@@ -665,7 +668,7 @@ input {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: 40px 30px; } }
+      padding: 40px 0; } }
 
 .gallery__hashtag {
   -webkit-box-ordinal-group: 1;
@@ -787,6 +790,9 @@ input {
   background-color: #ffffff;
   padding: 20px 16px 40px 16px;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .subscription {
+      padding: 20px 30px 40px; } }
   @media (min-width: 1440px) {
     .subscription {
       padding: 40px 100px 80px; } }
@@ -862,6 +868,9 @@ input {
   padding: 32px 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .footer-menu {
+      padding: 32px 30px; } }
   @media (min-width: 1440px) {
     .footer-menu {
       padding: 40px 0;
@@ -1162,6 +1171,9 @@ input {
         flex-wrap: nowrap;
     list-style: none;
     padding: 16px 15px 0; }
+    @media (min-width: 768px) {
+      .stores-nav .stores-nav__list {
+        padding: 16px 30px 0; } }
     @media (min-width: 1440px) {
       .stores-nav .stores-nav__list {
         -ms-flex-wrap: wrap;
@@ -1204,6 +1216,10 @@ input {
   cursor: pointer;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .stores-catalog__item {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .stores-catalog__item:not(:last-of-type) {
     margin-bottom: 32px; }
     @media (min-width: 1440px) {
@@ -1232,6 +1248,9 @@ input {
 
 .stores-catalog__list {
   padding: 40px 15px 0; }
+  @media (min-width: 768px) {
+    .stores-catalog__list {
+      padding: 40px 30px; } }
   @media (min-width: 1440px) {
     .stores-catalog__list {
       padding: 80px 113px 40px 100px; } }
@@ -1242,7 +1261,7 @@ input {
 
 .stores-catalog__item-desc {
   padding: 16px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 768px) {
     .stores-catalog__item-desc {
       padding: 32px 87px 32px 130px;
       -webkit-box-flex: 1;
