@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="Description" content="отделы и магазины торговый центр Соломбала Молл">
   <title>Отделы Соломбала Молл</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/helveticaneuecyr-roman.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/helvetica-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/PFHandbookPro-Bold.woff2" as="font" type="font/woff2" crossorigin="">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -24,14 +28,14 @@
           <nav class="navigation__social">
             <ul class="navigation__social-list">
               <li>
-                <a class="navigation__social-link" href="instagram.com">
+                <a class="navigation__social-link" href="instagram.com" aria-label="instagram">
                   <svg width="16" height="16">
                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="navigation__social-link" href="vk.com">
+                <a class="navigation__social-link" href="vk.com" aria-label="vkontakte">
                   <svg width="28" height="16">
                     <use xlink:href="img/sprite.svg#icon-vk"></use>
                   </svg>
@@ -59,12 +63,12 @@
             <li><a href="#">Бизнес<br class="navigation__menu-link-br">клубы</a></li>
             <li><a href="#">партнёрам</a></li>
           </ul>
-          <button type="button" class="navigation__search-open button">
+          <button type="button" class="navigation__search-open button" aria-label="начать поиск">
             <svg width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
           </button>
-          <button class="navigation__menu-open button">
+          <button class="navigation__menu-open button" aria-label="открыть мобильное меню">
             <svg width="30" height="18">
               <use xlink:href="img/sprite.svg#icon-burger"></use>
             </svg>
@@ -83,7 +87,7 @@
       <section class="stores-nav">
         <h1 class="visually-hidden">Навигация по магазинам</h1>
         <div class="stores-nav__swiper-container swiper-container swiper-container--stores container">
-          <ul class="stores-nav__list swiper-wrapper swiper-wrapper">
+          <ul class="stores-nav__list swiper-wrapper swiper-wrapper--stores">
             <li class="stores-nav__item stores-nav__item--active swiper-slide"><a href="#">все</a></li>
             <li class="stores-nav__item swiper-slide"><a href="#">одежда</a></li>
             <li class="stores-nav__item swiper-slide"><a href="#">обувь</a></li>
@@ -113,7 +117,7 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/kari-desktop@1x.webp 1x, img/kari-desktop@2x.webp 2x">
                 <source type="image/webp" srcset="img/kari-mobile@1x.webp 1x, img/kari-mobile@2x.webp 2x">
                 <source srcset="img/kari-desktop@1x.png 1x, img/kari-desktop@2x.png 2x" media="(min-width: 1440px)">
-                <img src="img/kari-mobile@1x.png" srcset="img/kari-mobile@2x.png 2x" alt="Магазин обуви Kari">
+                <img loading="lazy" src="img/kari-mobile@1x.png" srcset="img/kari-mobile@2x.png 2x" alt="Магазин обуви Kari">
               </picture>
             </div>
             <div class="stores-catalog__item-desc">
@@ -129,7 +133,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/happylook-desktop@1x.webp 1x, img/happylook-desktop@2x.webp 2x">
                 <source srcset="img/happylook-desktop@1x.png 1x, img/happylook-desktop@2x.png 2x" media="(min-width: 1440px)">
-                <img src="img/happylook-desktop@1x.png" srcset="img/happylook-desktop@2x.png 2x" alt="Салон оптики Счастливый взгляд">
+                <img loading="lazy" src="img/happylook-desktop@1x.png" srcset="img/happylook-desktop@2x.png 2x" alt="Салон оптики Счастливый взгляд">
               </picture>
             </div>
             <div class="stores-catalog__item-desc">
@@ -146,7 +150,7 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/kari-desktop@1x.webp 1x, img/kari-desktop@2x.webp 2x">
                 <source type="image/webp" srcset="img/kari-mobile@1x.webp 1x, img/kari-mobile@2x.webp 2x">
                 <source srcset="img/kari-desktop@1x.png 1x, img/kari-desktop@2x.png 2x" media="(min-width: 1440px)">
-                <img src="img/kari-mobile@1x.png" srcset="img/kari-mobile@2x.png 2x" alt="Магазин обуви Kari">
+                <img loading="lazy" src="img/kari-mobile@1x.png" srcset="img/kari-mobile@2x.png 2x" alt="Магазин обуви Kari">
               </picture>
             </div>
             <div class="stores-catalog__item-desc">
@@ -190,14 +194,14 @@
           <li class="footer-menu__item"><a href="#">Карта центра</a></li>
           <li class="footer-menu__item"><a href="#">Контакты</a></li>
           <li class="footer-menu__item footer-menu__item--social">
-            <a class="footer-menu__social-link" href="instagram.com">
+            <a class="footer-menu__social-link" href="instagram.com" aria-label="instagram">
               <svg width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-menu__item footer-menu__item--social">
-            <a class="footer-menu__social-link footer-menu__social-link--active" href="vk.com">
+            <a class="footer-menu__social-link footer-menu__social-link--active" href="vk.com" aria-label="vkontakte">
               <svg width="28" height="16" class="footer-menu__icon">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
@@ -207,9 +211,18 @@
         <div class="footer-menu__feedback">
           <p>Обратная связь</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="footer-menu__feedback-form feedback-form">
-            <label for="name"><input id="name" type="text" name="userName" value="" placeholder="Введите ваше имя" required=""></label>
-            <label for="email"><input id="email" type="email" name="userEmail" value="" placeholder="Введите ваш email" required=""></label>
-            <textarea cols="35" rows="5" placeholder="Введите ваше обращение" name="userMessage"></textarea>
+            <label for="name">
+              <span class="visually-hidden">Введите ваше имя</span>
+              <input id="name" type="text" name="userName" value="" placeholder="Введите ваше имя" required="">
+            </label>
+            <label for="email">
+              <span class="visually-hidden">Введите ваш email</span>
+              <input id="email" type="email" name="userEmail" value="" placeholder="Введите ваш email" required="">
+            </label>
+            <label for="message">
+              <span class="visually-hidden">Введите ваше обращение</span>
+            </label>
+            <textarea id="message" cols="35" rows="5" placeholder="Введите ваше обращение" name="userMessage"></textarea>
             <button type="submit" class="button feedback-button">Отправить</button>
           </form>
         </div>

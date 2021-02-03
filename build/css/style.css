@@ -104,7 +104,7 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 16px 0;
+      padding: 16px 0 6px;
       color: #ffffff; } }
   .navigation--contacts--show {
     display: -webkit-box;
@@ -112,41 +112,6 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .navigation--contacts p {
-    margin: 0;
-    margin-bottom: 16px;
-    width: 100%; }
-    @media (min-width: 1440px) {
-      .navigation--contacts p {
-        margin: 0;
-        text-transform: uppercase;
-        width: auto; } }
-    @media (min-width: 1440px) {
-      .navigation--contacts p:first-of-type {
-        margin-right: 52px; } }
-    @media (min-width: 1440px) {
-      .navigation--contacts p:last-of-type {
-        margin-left: 21px; } }
-  .navigation--contacts .navigation__contacts-map {
-    text-transform: uppercase;
-    color: #ffffff;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 64px; }
-    .navigation--contacts .navigation__contacts-map:hover, .navigation--contacts .navigation__contacts-map:focus {
-      opacity: 0.7; }
-    @media (min-width: 1440px) {
-      .navigation--contacts .navigation__contacts-map {
-        margin-bottom: 0;
-        width: auto;
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
-        color: #e74011;
-        text-decoration: underline; } }
 
 .navigation--main-menu {
   display: -webkit-box;
@@ -167,7 +132,58 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 40px 0; } }
+      padding: 40px 0 30px; } }
+
+.navigation__address {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 1440px) {
+    .navigation__address {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 615px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-right: 88px; } }
+  .navigation__address li {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 100%; }
+    @media (min-width: 1440px) {
+      .navigation__address li {
+        margin: 0;
+        text-transform: uppercase;
+        width: auto;
+        padding-bottom: 10px; } }
+    @media (min-width: 1440px) {
+      .navigation__address li:first-of-type {
+        margin-right: 52px; } }
+
+.navigation__contacts-map {
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 64px; }
+  .navigation__contacts-map:hover, .navigation__contacts-map:focus {
+    opacity: 0.7; }
+  @media (min-width: 1440px) {
+    .navigation__contacts-map {
+      margin-bottom: 0;
+      width: auto;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      color: #e74011;
+      text-decoration: underline; } }
 
 .navigation__social {
   display: -webkit-box;
@@ -201,14 +217,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   @media (min-width: 1440px) {
     .navigation__social-list {
       -webkit-box-pack: unset;
           -ms-flex-pack: unset;
-              justify-content: unset; } }
+              justify-content: unset;
+      width: 305px; } }
   .navigation__social-list li {
     margin-right: 30px; }
     @media (min-width: 1440px) {
@@ -232,10 +254,10 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 870px;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; } }
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 918px;
+      padding-top: 10px; } }
   .navigation__menu-links li {
     border-bottom: 1px solid #ffffff;
     text-transform: uppercase;
@@ -246,7 +268,9 @@ a {
       .navigation__menu-links li {
         color: #000000;
         width: unset;
-        padding: 0; } }
+        padding: 0;
+        margin-right: 48px;
+        padding-bottom: 10px; } }
   .navigation__menu-links a {
     color: #ffffff; }
     @media (min-width: 1440px) {
@@ -265,7 +289,7 @@ a {
       display: block; } }
 
 .navigation .navigation__search-open {
-  width: 114px;
+  width: 60px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,8 +349,7 @@ a {
   min-height: 266px; }
   @media (min-width: 1440px) {
     .intro {
-      padding: 20px 0 70px;
-      min-height: 266px; } }
+      min-height: 616px; } }
   .intro h1 {
     font-size: 40px;
     line-height: 40px;
@@ -393,13 +416,13 @@ a {
       padding-bottom: 220px; } }
   @media (min-width: 1440px) {
     .swiper-slide {
-      background-image: url("../img/slider-desktop@1x.png");
-      background-size: 100%;
+      background-image: url("../img/slider-desktop@1x.jpg");
+      background-size: cover;
       padding-top: 110px;
       padding-bottom: 160px; } }
   @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
     .swiper-slide {
-      background-image: url("../img/slider-desktop@2x.png"); } }
+      background-image: url("../img/slider-desktop@2x.jpg"); } }
 
 .swiper-slide__description {
   display: none; }
@@ -416,6 +439,12 @@ a {
   left: 134px;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg); }
+
+.swiper-pagination {
+  margin-bottom: 32px; }
+  @media (min-width: 1440px) {
+    .swiper-pagination {
+      margin-bottom: 70px; } }
 
 .swiper-pagination-bullet {
   background-color: transparent;
@@ -449,12 +478,12 @@ a {
   padding: 0; }
 
 .button {
-  border: none;
   outline: none;
   padding: 0;
   background-color: transparent;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid transparent; }
   .button:focus {
     border: 1px solid #000000; }
   .button:focus, .button:hover {
