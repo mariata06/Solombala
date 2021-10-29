@@ -110,7 +110,9 @@
 }
 
 .swiper-pagination {
+  position: absolute;
   margin-bottom: 32px;
+  bottom: 20px;
 
   @media (min-width: $min-desktop-width) {
     margin-bottom: 70px;
@@ -150,6 +152,7 @@
 }
 
 .swiper-container {
+  position: relative;
   &--stores {
     .swiper-slide {
       background-image: none;

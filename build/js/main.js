@@ -84,6 +84,7 @@ document.onclick = function (evt) {
 
 //////////////Initialize Swiper Intro///////////////////
 var swiper = new Swiper(".swiper-container.swiper-container--intro", {
+  loop: true,
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",

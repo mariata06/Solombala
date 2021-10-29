@@ -441,7 +441,9 @@ a {
           transform: rotate(-180deg); }
 
 .swiper-pagination {
-  margin-bottom: 32px; }
+  position: absolute;
+  margin-bottom: 32px;
+  bottom: 20px; }
   @media (min-width: 1440px) {
     .swiper-pagination {
       margin-bottom: 70px; } }
@@ -473,9 +475,11 @@ a {
       .swiper-button-next:focus {
         opacity: 0.7; } }
 
-.swiper-container--stores .swiper-slide {
-  background-image: none;
-  padding: 0; }
+.swiper-container {
+  position: relative; }
+  .swiper-container--stores .swiper-slide {
+    background-image: none;
+    padding: 0; }
 
 .button {
   outline: none;
